@@ -2,8 +2,8 @@ import AWS from 'aws-sdk'
 
 const BUCKET = 'practice-editor'
 AWS.config.update({
-  accessKeyId: 'AKIAZROSF3KMODTARG4Q',
-  secretAccessKey: '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',
+  accessKeyId: process.env.AKI,
+  secretAccessKey: process.env.SAK,
 })
 const s3 = new AWS.S3()
 

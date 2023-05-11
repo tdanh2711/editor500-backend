@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const aws_sdk_1 = __importDefault(require("aws-sdk"));
 const BUCKET = 'practice-editor';
 aws_sdk_1.default.config.update({
-    accessKeyId: 'AKIAZROSF3KMODTARG4Q',
-    secretAccessKey: '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',
+    accessKeyId: process.env.AKI,
+    secretAccessKey: process.env.SAK,
 });
 const s3 = new aws_sdk_1.default.S3();
 const getSignedUrl = (fileName, fileType = 'image/jpeg') => {
