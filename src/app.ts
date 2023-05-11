@@ -1,7 +1,10 @@
 import express from 'express'
+import cors from 'cors'
 import aws from './aws'
 
 const app = express()
+
+app.use(cors())
 
 app.get('/upload-url', async (req, res, next) => {
   const { fileName, fileType } = req.query
