@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const aws_sdk_1 = __importDefault(require("aws-sdk"));
-const BUCKET = 'practice-editor';
+const BUCKET = process.env.BK;
 aws_sdk_1.default.config.update({
     accessKeyId: process.env.AKI,
     secretAccessKey: process.env.SAK,

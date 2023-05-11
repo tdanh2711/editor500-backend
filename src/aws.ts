@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk'
 
-const BUCKET = 'practice-editor'
+const BUCKET = process.env.BK
 AWS.config.update({
   accessKeyId: process.env.AKI,
   secretAccessKey: process.env.SAK,
